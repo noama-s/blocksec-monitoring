@@ -59,7 +59,7 @@ contractAddresses = [
     '0xc2CCA20b76F5494b1b10774e0D182f10d98B4A51', 
     ]
 
-    const eventsList = ['Transfer','OwnershipTransferred', 'BaseURIset'];
+    const eventsList = ['OwnershipTransferred', 'BaseURIset'];
     
     for (const contractAddress of contractAddresses) {
         console.log(`Processing contract: ${contractAddress}`);
