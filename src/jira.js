@@ -38,8 +38,7 @@ async function createJiraTicket(event) {
                                 - Event Arguments: ${JSON.stringify(event.returnValues, replacer)}\n
                                 - Timestamp: ${event.timestamp}\n
                                 - From: ${event.returnValues.from || 'N/A'}\n
-                                - To: ${event.returnValues.to || 'N/A'}\n 
-                                - Details: ${JSON.stringify(event.returnValues, replacer)}\n`
+                                - To: ${event.returnValues.to || 'N/A'}\n`
                             }
                         ]
                     }
