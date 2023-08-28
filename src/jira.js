@@ -28,12 +28,18 @@ async function createJiraTicket(event) {
                 "version": 1,
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
                             {
                                 "type": "text",
-                                "text": `Contract: ${event.address}\nTransactionHash: ${event.transactionHash}\nDetails: ${JSON.stringify(event.returnValues, replacer)}`
+                                "text": `Detailed information about the event:\n
+                                - Contract: ${event.address}\n
+                                - Transaction Hash: ${event.transactionHash}\n
+                                - Block Number: ${event.blockNumber}\n
+                                - Event Type: ${event.event}\n
+                                - Event Arguments: ${JSON.stringify(event.returnValues, replacer)}\n
+                                - Timestamp: ${event.timestamp}\n
+                                - From: ${event.returnValues.from || 'N/A'}\n
+                                - To: ${event.returnValues.to || 'N/A'}\n 
+                                - Details: ${JSON.stringify(event.returnValues, replacer)}\n`
                             }
                         ]
                     }
