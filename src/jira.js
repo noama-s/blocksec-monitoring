@@ -23,7 +23,7 @@ async function createJiraTicket(event) {
             "project": {
                 "key": process.env.JIRA_PROJECT_KEY
             },
-            "summary": `[Monitoring TEST] - New Event: ${event.event}`,
+            "summary": `[Monitoring] - New Event: ${event.event}`,
             "description": {
                 "version": 1,
                 "type": "doc",
