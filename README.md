@@ -54,7 +54,7 @@ Add your smart contract addresses and ABI files in the contract-abi folder.
 
 Run the script:
 ``` 
-node index.js
+node monitor.js
 ``` 
 
 Your application should now be listening for events on the specified contracts and creating Jira tickets accordingly.
