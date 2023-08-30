@@ -39,8 +39,6 @@ async function createJiraTicket(event) {
                                 - Timestamp: ${event.timestamp}\n
                                 - From: ${event.returnValues.from || 'N/A'}\n
                                 - To: ${event.returnValues.to || 'N/A'}\n`
-                            }
-                        ]
                     }
                 ]
             },
@@ -49,7 +47,6 @@ async function createJiraTicket(event) {
             }
         }
     };
-
     // Validate Event Data
     console.log('Sending data:', JSON.stringify(data, null, 2));
 
